@@ -29,7 +29,7 @@ export default function Home({ session }) {
         {/*  Feed (Create Post and Posts) */}
         <Feed />
 
-        {/* Right SideBar */}
+        {/* Right SideBar - Contacts */}
         <RightSidebar />
 
       </main>
