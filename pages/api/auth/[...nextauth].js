@@ -1,7 +1,12 @@
 import NextAuth from "next-auth/next";
 import FacebookProvider from "next-auth/providers/facebook";
+const crypto = require('crypto');
+
+const secret = crypto.randomBytes(64).toString('hex');
 
 export default NextAuth({
+    secret: secret, // Replace with your own secret
+
     // Configure one or more authentication providers
     providers: [
         FacebookProvider({
