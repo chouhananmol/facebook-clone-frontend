@@ -85,10 +85,10 @@ const Header = () => {
                     <TbLogout
                         size={20}
                         onClick={signOut}
-                        className='hidden lg:inline-flex h-10 w-10 bg-gray-200 p-2 text-gray-600 rounded-full cursor-pointer group-hover:bg-gray-300 transition duration-300 ease-in-out transform group-hover:translate-x-1'
+                        className='hidden lg:inline-flex h-10 w-10 bg-gray-200 p-2 text-gray-600 rounded-full cursor-pointer group-hover:bg-gray-300 transition duration-300 ease-in-out transform'
 
                     />
-                    <span className='absolute opacity-0 text-gray-600 text-xs px-2 py-1 rounded-md top-6 left-14 transition duration-300 ease-in-out transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100'>
+                    <span className='absolute opacity-0 text-white bg-black text-xs px-2 py-1 rounded-md top-8 left-5 group-hover:translate-y-4 transition duration-300 ease-in-out transform -translate-y-1/2 -translate-x-1/2 group-hover:opacity-100'>
                         Logout
                     </span>
                 </div>
