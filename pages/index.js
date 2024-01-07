@@ -9,7 +9,10 @@ import { getSession } from 'next-auth/react';
 
 export default function Home({ session }) {
 
-  if (!session) return <Login />;
+  console.log("session", session);
+  if (!session) return (
+    <Login />
+  );
 
   return (
     <div >
