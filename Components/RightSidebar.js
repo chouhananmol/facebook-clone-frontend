@@ -30,12 +30,12 @@ const RightSidebar = () => {
             {/* Contacts */}
             <Contacts name='Vishal' src='https://randomuser.me/api/portraits/men/1.jpg' status="Online" />
             <Contacts name='Anurag' src="https://randomuser.me/api/portraits/men/41.jpg" status="Offline" />
-            <Contacts name="Vaibhav" src="https://randomuser.me/api/portraits/women/41.jpg" status="Offline" />
             <Contacts name="Joseph" src="https://randomuser.me/api/portraits/men/42.jpg" status="Online" />
             <Contacts name="Priya" src="https://randomuser.me/api/portraits/women/42.jpg" status="Offline" />
             <Contacts name="Raghav" src="https://randomuser.me/api/portraits/men/43.jpg" status="Online" />
-            <Contacts name="Mena" src="https://randomuser.me/api/portraits/men/40.jpg" status="Online" />
+            <Contacts name="Harsh" src="https://randomuser.me/api/portraits/men/40.jpg" status="Online" />
             <Contacts name="Aishwarya" src="https://randomuser.me/api/portraits/women/63.jpg" status="Online" />
+            <Contacts name="Priyanka" src="https://randomuser.me/api/portraits/women/41.jpg" status="Offline" />
             <Contacts name="Bhavin" src="https://randomuser.me/api/portraits/men/13.jpg" status="Offline" />
             <Contacts name="alisha" src="https://randomuser.me/api/portraits/women/3.jpg" status="Online" />
 

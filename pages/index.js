@@ -4,12 +4,16 @@ import Sidebar from '../Components/Sidebar'
 import Login from '../Components/Login.js'
 import Feed from '../Components/Feed.js'
 import RightSidebar from '../Components/RightSidebar.js'
-import { getSession } from 'next-auth/react';
+import { getSession, useSession } from 'next-auth/react';
 
 
 export default function Home({ session }) {
 
+  const { data } = useSession();
+
+  console.log("data", data);
   console.log("session", session);
+
   if (!session) return (
     <Login />
   );
