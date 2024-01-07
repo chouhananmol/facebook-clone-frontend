@@ -7,7 +7,6 @@ import RightSidebar from '../Components/RightSidebar.js'
 import { getSession } from 'next-auth/react';
 
 
-
 export default function Home({ session }) {
 
   if (!session) return <Login />;
@@ -26,7 +25,7 @@ export default function Home({ session }) {
         {/* Left SideBar */}
         <Sidebar />
 
-        {/*  Feed (Create Post and Posts) */}
+        {/*  Feed - (Create Post and Posts) */}
         <Feed />
 
         {/* Right SideBar - Contacts */}
@@ -35,7 +34,7 @@ export default function Home({ session }) {
       </main>
     </div>
   )
-}
+};
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
@@ -44,4 +43,4 @@ export async function getServerSideProps(context) {
       session
     }
   }
-}
+};
