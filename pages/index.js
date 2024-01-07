@@ -9,9 +9,6 @@ import { getSession, useSession } from 'next-auth/react';
 
 export default function Home({ session }) {
 
-  const { data } = useSession();
-
-  console.log("data", data);
   console.log("session", session);
 
   if (!session) return (
@@ -44,7 +41,7 @@ export default function Home({ session }) {
 };
 
 export async function getServerSideProps(context) {
-  console.log("context", context);
+  console.log("\n \ncontext", context.req.headers);
   const session = await getSession(context);
   return {
     props: {
